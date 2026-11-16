@@ -6,9 +6,9 @@
 }
 
 body {
-  background: #f3f6fa;
+  background: #616569;
   font-family: Arial, sans-serif;
-  color: #183653;
+  color: #0a7513;
 }
 
 .container {
@@ -18,8 +18,8 @@ body {
 }
 
 .cabecalho {
-  background: linear-gradient(120deg, #104575, #17669b);
-  color: white;
+  background: linear-gradient(120deg, #0d5f06, #2fac4a);
+  color: rgb(255, 255, 255);
   padding: 40px;
   margin-top: 25px;
   border-radius: 12px;
@@ -47,17 +47,17 @@ body {
 
 .introducao h2 {
   margin-bottom: 10px;
-  color: #104575;
+  color: #56c95c;
 }
 
 .introducao p {
-  color: #52677c;
+  color: #69aa69;
   line-height: 1.6;
 }
 
 .progresso {
-  background: white;
-  border: 1px solid #d1dce8;
+  background: rgb(53, 51, 51);
+  border: 1px solid #616161;
   border-radius: 10px;
   padding: 18px;
   margin-bottom: 20px;
@@ -66,7 +66,7 @@ body {
 .progresso h3 {
   font-size: 15px;
   margin-bottom: 12px;
-  color: #104575;
+  color: #33c457;
 }
 
 .barra {
@@ -91,9 +91,9 @@ body {
 }
 
 .card {
-  background: white;
+  background: #e4e9ee;
   padding: 22px;
-  border: 1px solid #d1dce8;
+  border: 1px solid #616569;
   border-radius: 12px;
   transition: 0.2s;
 }
@@ -104,25 +104,25 @@ body {
 }
 
 .card-revisado {
-  border: 2px solid #27865d;
-  background: #f5fcf7;
+  border: 2px solid #34e498;
+  background: #c2f1d0;
 }
 
 .numero {
   font-size: 11px;
   font-weight: bold;
-  color: #4380b2;
+  color: #178009;
 }
 
 .card h2 {
   font-size: 21px;
   margin: 12px 0;
-  color: #104575;
+  color: #1ec743;
 }
 
 .card p {
   line-height: 1.6;
-  color: #52677c;
+  color: #0a7c3a;
 }
 
 .exemplo {
@@ -135,7 +135,7 @@ body {
 .exemplo h3 {
   font-size: 14px;
   margin-bottom: 12px;
-  color: #104575;
+  color: #107532;
 }
 
 pre {
@@ -148,21 +148,21 @@ pre {
 }
 
 .correcao {
-  background: #fff5e9;
-  border-left: 4px solid #e39b38;
+  background: #e9ffef;
+  border-left: 4px solid #55e338;
   padding: 15px;
   margin-top: 18px;
   border-radius: 5px;
 }
 
 .correcao h3 {
-  color: #a56819;
+  color: #19a52c;
   font-size: 15px;
   margin-bottom: 12px;
 }
 
 .correcao pre {
-  background: #f5e7d6;
+  background: #d6f5d9;
   padding: 10px;
   border-radius: 5px;
   margin: 8px 0 12px;
@@ -185,12 +185,12 @@ pre {
 }
 
 .btn-revisar {
-  background: #104575;
+  background: #107526;
   color: white;
 }
 
 .btn-revisar:hover {
-  background: #17669b;
+  background: #179b43;
 }
 
 .btn-revisado {
@@ -211,12 +211,12 @@ pre {
 }
 
 .duvidas h2 {
-  color: #104575;
+  color: #107521;
   margin-bottom: 10px;
 }
 
 .duvidas > p {
-  color: #52677c;
+  color: #527c58;
   line-height: 1.6;
 }
 
@@ -230,18 +230,18 @@ pre {
   flex: 1;
   min-width: 0;
   padding: 12px;
-  border: 1px solid #cbd8e5;
+  border: 1px solid #cbe5cc;
   border-radius: 7px;
   outline: none;
   font-size: 14px;
 }
 
 .campo-duvida input:focus {
-  border-color: #17669b;
+  border-color: #179b38;
 }
 
 .campo-duvida button {
-  background: #104575;
+  background: #10752e;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -250,7 +250,7 @@ pre {
 }
 
 .campo-duvida button:hover {
-  background: #17669b;
+  background: #179b3f;
 }
 
 .lista-duvidas {
@@ -259,7 +259,7 @@ pre {
 
 .item-duvida {
   background: #edf3f8;
-  border-left: 4px solid #17669b;
+  border-left: 4px solid #179b29;
   padding: 14px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -276,7 +276,7 @@ footer {
   text-align: center;
   padding: 30px;
   margin-top: 30px;
-  color: #718398;
+  color: #62a562;
   font-size: 13px;
   line-height: 1.8;
 }
