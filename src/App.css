@@ -55,6 +55,35 @@ body {
   line-height: 1.6;
 }
 
+.progresso {
+  background: white;
+  border: 1px solid #d1dce8;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.progresso h3 {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #104575;
+}
+
+.barra {
+  width: 100%;
+  height: 12px;
+  background: #dce6ef;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.barra-preenchida {
+  height: 100%;
+  background: #27865d;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -72,6 +101,11 @@ body {
 .card:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px #00000012;
+}
+
+.card-revisado {
+  border: 2px solid #27865d;
+  background: #f5fcf7;
 }
 
 .numero {
@@ -138,6 +172,106 @@ pre {
   font-size: 14px;
 }
 
+.btn-revisar,
+.btn-revisado {
+  width: 100%;
+  padding: 12px;
+  margin-top: 18px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-revisar {
+  background: #104575;
+  color: white;
+}
+
+.btn-revisar:hover {
+  background: #17669b;
+}
+
+.btn-revisado {
+  background: #27865d;
+  color: white;
+}
+
+.btn-revisado:hover {
+  background: #1d6847;
+}
+
+.duvidas {
+  background: white;
+  border: 1px solid #d1dce8;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.duvidas h2 {
+  color: #104575;
+  margin-bottom: 10px;
+}
+
+.duvidas > p {
+  color: #52677c;
+  line-height: 1.6;
+}
+
+.campo-duvida {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.campo-duvida input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #cbd8e5;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+}
+
+.campo-duvida input:focus {
+  border-color: #17669b;
+}
+
+.campo-duvida button {
+  background: #104575;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.campo-duvida button:hover {
+  background: #17669b;
+}
+
+.lista-duvidas {
+  margin-top: 20px;
+}
+
+.item-duvida {
+  background: #edf3f8;
+  border-left: 4px solid #17669b;
+  padding: 14px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow-wrap: anywhere;
+}
+
+.sem-duvidas {
+  color: #8292a3;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
 footer {
   text-align: center;
   padding: 30px;
@@ -147,3 +281,28 @@ footer {
   line-height: 1.8;
 }
 
+@media (max-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cabecalho {
+    padding: 25px;
+  }
+
+  .cabecalho h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .campo-duvida {
+    flex-direction: column;
+  }
+
+  .campo-duvida button {
+    width: 100%;
+  }
+}

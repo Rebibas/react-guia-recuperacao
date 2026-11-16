@@ -1,7 +1,14 @@
 
+import { useState } from 'react'
 import './App.css'
 
+import Header from './Components/Header'
+import CardConceito from './Components/CardConceito'
+import ListaDuvidas from './Components/ListaDuvidas'
+
 function App() {
+
+  const [revisados, setRevisados] = useState([])
 
   const conteudos = [
     {
@@ -74,16 +81,21 @@ function App() {
     }
   ]
 
+  function marcarRevisado(id) {
+    setRevisados((anterior) =>
+      anterior.includes(id)
+        ? anterior.filter((item) => item !== id)
+        : [...anterior, id]
+    )
+  }
+
   return (
     <div className="container">
 
-      <header className="cabecalho">
-        <p className="subtitulo">SENAI • SANTA CATARINA • PROGRAMAÇÃO</p>
-        <h1>React em Prática</h1>
-        <p>Guia interativo de estudos sobre desenvolvimento com React.</p>
-      </header>
+      <Header />
 
       <main>
+
         <section className="introducao">
           <h2>Guia de Estudos</h2>
           <p>
@@ -92,41 +104,32 @@ function App() {
           </p>
         </section>
 
+        <div className="progresso">
+          <h3>Conteúdos revisados: {revisados.length}/8</h3>
+
+          <div className="barra">
+            <div
+              className="barra-preenchida"
+              style={{ width: `${(revisados.length / 8) * 100}%` }}
+            ></div>
+          </div>
+        </div>
+
         <section className="cards">
 
           {conteudos.map((conteudo) => (
-            <div className="card" key={conteudo.id}>
-
-              <span className="numero">
-                CONTEÚDO 0{conteudo.id}
-              </span>
-
-              <h2>{conteudo.titulo}</h2>
-
-              <p>{conteudo.explicacao}</p>
-
-              <div className="exemplo">
-                <h3>Exemplo prático</h3>
-                <pre>{conteudo.exemplo}</pre>
-              </div>
-
-              {conteudo.erro && (
-                <div className="correcao">
-                  <h3>Correção de erro: {conteudo.erroTitulo}</h3>
-
-                  <p>Exemplo incorreto:</p>
-                  <pre>{conteudo.codigoErro}</pre>
-
-                  <p className="explicacao-correcao">
-                    <strong>Como corrigir:</strong> {conteudo.correcao}
-                  </p>
-                </div>
-              )}
-
-            </div>
+            <CardConceito
+              key={conteudo.id}
+              conteudo={conteudo}
+              revisado={revisados.includes(conteudo.id)}
+              marcarRevisado={marcarRevisado}
+            />
           ))}
 
         </section>
+
+        <ListaDuvidas />
+
       </main>
 
       <footer>
