@@ -1,0 +1,149 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f6fa;
+  font-family: Arial, sans-serif;
+  color: #183653;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.cabecalho {
+  background: linear-gradient(120deg, #104575, #17669b);
+  color: white;
+  padding: 40px;
+  margin-top: 25px;
+  border-radius: 12px;
+}
+
+.subtitulo {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.cabecalho h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.cabecalho p {
+  line-height: 1.6;
+}
+
+.introducao {
+  margin: 35px 0 20px;
+}
+
+.introducao h2 {
+  margin-bottom: 10px;
+  color: #104575;
+}
+
+.introducao p {
+  color: #52677c;
+  line-height: 1.6;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border: 1px solid #d1dce8;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px #00000012;
+}
+
+.numero {
+  font-size: 11px;
+  font-weight: bold;
+  color: #4380b2;
+}
+
+.card h2 {
+  font-size: 21px;
+  margin: 12px 0;
+  color: #104575;
+}
+
+.card p {
+  line-height: 1.6;
+  color: #52677c;
+}
+
+.exemplo {
+  background: #edf3f8;
+  padding: 15px;
+  margin-top: 18px;
+  border-radius: 8px;
+}
+
+.exemplo h3 {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #104575;
+}
+
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-family: Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #263d53;
+}
+
+.correcao {
+  background: #fff5e9;
+  border-left: 4px solid #e39b38;
+  padding: 15px;
+  margin-top: 18px;
+  border-radius: 5px;
+}
+
+.correcao h3 {
+  color: #a56819;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.correcao pre {
+  background: #f5e7d6;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 8px 0 12px;
+}
+
+.explicacao-correcao {
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 30px;
+  color: #718398;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
